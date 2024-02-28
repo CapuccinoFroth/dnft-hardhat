@@ -4,8 +4,7 @@ pragma solidity 0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@chainlink/contracts/src/v0.8/AutomationCompatible.sol";
+import "@chainlink/contracts/src/v0.8/automation/AutomationCompatible.sol";
 
 contract MyDNFT is ERC721, ERC721URIStorage, AutomationCompatibleInterface {
     uint256 private _nextTokenId;
@@ -16,7 +15,7 @@ contract MyDNFT is ERC721, ERC721URIStorage, AutomationCompatibleInterface {
     enum Years{
         Year2022, // First = 0
         Year2023, // Second = 1
-        Year2024 // Third = 2
+        Year2024 // Third = 2npm
     }
 
     // Year of each NFT
